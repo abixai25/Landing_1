@@ -1,0 +1,592 @@
+/* typo*/
+@font-face {font-family: "Sofia pro";src: url("typo/sofiapro-light.otf");}
+@font-face {font-family: "Sofia pro bold"; src: url("typo/Sofia Pro Bold.ttf");}
+@font-face {font-family: "Sofia pro medium";src: url("typo/Sofia Pro Medium.ttf");}
+
+body { width: 100%; padding:0; margin:0;box-sizing: border-box; background-color: #fff;}
+
+a,p,span,option{font-family: "Sofia pro";text-decoration: none;}
+h1,h2,h4,h6{font-family: "Sofia pro bold";text-decoration: none;}
+h3,h5{font-family: "Sofia pro medium";text-decoration: none;}
+::placeholder {color: #C4C4C4; margin-left:5px;}  
+/* Colors */
+.primary{color: #29464E;}
+a{text-decoration: none;color: #000;}
+.second{color: #13455E;}
+.alert{color: #D56E67;}
+.bg-alert{background-color: #D56E67;}
+.dark {color: #062F43;}
+.bgDark{background-color: #062F43;}
+.infoColor{color: #59ABB3;}
+.text-w{color: #fff;}
+/* header*/
+header{  box-shadow: 0 6px 4px -4px #f5f5f5;}
+header nav{display:flex;flex-direction: row;justify-content: center;}
+header nav .logotipo{display:flex;flex-direction:row;justify-content: space-between;}
+header nav .searchs-box{display:flex;flex-direction:row;justify-content: flex-end;align-items: flex-end; }
+header nav .searchs-box span{position:absolute;top:1em;left:1.6em;color:#c4c4c4;}
+header nav .searchs-box .form-control{padding:1.5em 0em 1.5em 2em;border: solid 1px #c4c4c4; border-radius:0.7em;}
+header nav .searchs-box .tipo-usuario button{width:100%;padding:0.7em 0em 0.7em 0em; background-color:rgba(255, 255, 255, 0);border-radius:0.7em;border:solid 1px #59abb3;text-align:left;padding-left:1em;color:#59abb3;}
+header nav .searchs-box .tipo-usuario button i{width:55%;  font-size: 22px; text-align:right;}
+header nav .searchs-box .tipo-usuario button:focus{outline:none;}
+header nav .searchs-box .tipo-usuario .dropdown-menu{width:100%;}
+header nav .searchs-box .tipo-usuario .dropdown-menu a{color:#59abb3;}
+header nav .searchs-box .open-bar{width:50%;position:relative; right:2em;margin-top:-1em;}
+header nav .searchs-box .open-bar a{width:100%;text-align:right;font-size:1em;color:#59abb3;}
+header nav .searchs-box .open-bar a i{position:relative; top:0.2em; left:0.2em; font-size:2.0em;}
+/*button back*/
+.section-back {
+background-color:white;width: 100%;height: 100px;background-position: center;background-repeat: no-repeat; background-size: cover;}
+
+/* section 1*/
+.bg-1 {background-image: url("img/Banners/315891-P8RUWI-712 1.png");max-width: 100%;max-height: auto;height: 100%;background-position: center;background-repeat: no-repeat; background-size: cover;}
+.button {width: 170px;height: 45px;font-size: 14px;letter-spacing: 2.5px;font-weight: 500;color: #13455E;background-color: #F5F9FA;border: none;border-radius: 10px;box-shadow: 0px 10px 17px rgba(0, 0, 0, 0.1);transition: all 0.3s ease 0s;cursor: pointer;outline: none;font-family: "Sofia pro medium";letter-spacing: normal;margin-left: 113px;}
+.button-banner{margin-left: 75px;}
+.button:hover {background-color: #59ABB3;box-shadow: 0px 15px 20px #59ABB3;color: #fff;transform: translateY(-7px);}
+.text-banner{float: left;margin: 100px 50px 50 90px;text-align: justify;letter-spacing: 1px;}
+
+/* section 2*/
+.bg-2 {background-color: white;width: 100%; height: auto; background-position: center;background-repeat: no-repeat;background-size: cover; }
+.box {transition: box-shadow .3s;width: 100%;height: 13rem;margin-bottom: 30px;border-radius: 25px;background: #fff;float: left;box-shadow: 10px 10px 10px rgba(33,33,33,.2);}
+.box:hover {box-shadow: 0 0 11px rgba(33,33,33,.2); }
+
+/*section 3 */
+.bg-second{background-color: #13455E; }
+.third{font-style: normal;font-weight: 500;font-size: 22px;line-height: 32px;text-align: center;color: #FFFFFF; margin-top:100px; margin-bottom:100px}
+
+/*section 4*/
+.fourth-title{font-family: 'Sofia pro bold';font-style: normal;font-weight: bold;font-size: 22px;line-height: 38px;}
+input[type="radio"] {display: none;}
+.start {-webkit-text-stroke: 1px  #D56E67 ; color: transparent; }
+.classification {direction: rtl;unicode-bidi: bidi-override;}
+.start:hover,.start:hover ~ .start {color: #D56E67;}
+input[type="radio"]:checked ~ .start {color: #D56E67;}
+
+/*section 5*/
+.text-white{color: #fff;font-size: 18px !important; font-family: "Sofia pro"; }
+.title-white{color: #fff; margin-top: 50px; font-family: "Sofia pro bold";}  
+.text-center{text-align: center;}
+.bg-5{width:100%;height:100%;display:flex;flex-direction:column;justify-content: center;align-items:center;background-image:url(img/Background/fondo2.png);background-repeat:no-repeat;background-size:100% 100%;} 
+.bg-5 form{width:35%;height:100%;background-color:#fff;display:flex;flex-direction:column;justify-content: center;align-items:center;border-radius:1em;padding:3em 0em;margin-top:1em;margin-bottom:13em; }
+.bg-5 form h3{width:85%;font-size:1em;text-align:center !important;}
+.bg-5 form fieldset{width:100%;display:flex;flex-direction:column;justify-content: center;align-items:center;}
+.bg-5 form input{width:85%;padding:.75em;margin-bottom:1.5em;border:none;border-radius:0.5em;outline:none;box-shadow: 2px 10px 15px #eeeeee;}
+.bg-5 form button{width:55%;padding:1.3em;margin-bottom:1.5em;border:none;border-radius:0.5em;color:#D56E67;background-color:rgba(255, 255, 255, 0);box-shadow: 6px 10px 15px #eeeeee;}    
+.bg-5 form button:hover{color: #fff;background-color: #D56E67;}
+
+/*section 6*/
+.vl {width: 0px;border: 1px solid #0f3f56;height: 350px;}
+.text-bold{font-family: 'Sofia pro bold';}
+.text-white-6{color:#fff;}
+.text-white-6 img{ margin-right:20px ; width: 20px; }
+.icoYoutube img{width: 100%;max-width: 40px;height: auto;margin: 10px;}
+.icoLinkedin img{  width: 100%; max-width: 40px; height: auto; margin: 10px;}
+.form-control-sm {height: calc(1.5em + .5rem + 2px);padding: .25rem .5rem;font-size: .875rem;line-height: 1.5;border-radius: .2rem;background-color: rgba(218, 218, 218, 1);}
+textarea.form-control {height: auto;background-color: rgba(218, 218, 218, 1);}
+.button-info {width: 150px;height: 45px;font-size: 12px;letter-spacing: 2.5px;font-weight: 500; color: #ffffff;background-color: #13455E;border: none;border-radius: 10px;box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.5);transition: all 0.3s ease 0s; cursor: pointer;outline: none;font-family: "Sofia pro medium";letter-spacing: normal;}
+.button-info:hover {background-color: #13455E;box-shadow: 0px 15px 20px rgba(19, 69, 94, 0.6);color: #fff;transform: translateY(-7px);}
+
+
+@media screen and (min-width:1921px) and (max-width:2580px){
+  /* header*/
+header{box-shadow: 0px 5px 40px #f5f5f5;}
+header nav{display:flex;flex-direction: row;justify-content: center;}
+header nav .logotipo{display:flex;flex-direction:row;justify-content: space-between;}
+header nav .searchs-box{display:flex;flex-direction:row;justify-content: flex-end;align-items: flex-end; }
+header nav .searchs-box span{position:absolute;top:1em;left:1.6em;color:#c4c4c4;}
+header nav .searchs-box .form-control{padding:1.5em 0em 1.5em 2em;border: solid 1px #c4c4c4; border-radius:0.7em;}
+header nav .searchs-box .tipo-usuario button{width:100%;padding:0.7em 0em 0.7em 0em; background-color:rgba(255, 255, 255, 0);border-radius:0.7em;border:solid 1px #59abb3;text-align:left;padding-left:1em;color:#59abb3;}
+header nav .searchs-box .tipo-usuario button i{width:55%;  font-size: 22px; text-align:right;}
+header nav .searchs-box .tipo-usuario button:focus{outline:none;}
+header nav .searchs-box .tipo-usuario .dropdown-menu{width:100%;}
+header nav .searchs-box .tipo-usuario .dropdown-menu a{color:#59abb3;}
+header nav .searchs-box .open-bar{width:50%;position:relative; right:2em;margin-top:-1em;}
+header nav .searchs-box .open-bar a{width:100%;text-align:right;font-size:1em;color:#59abb3;}
+header nav .searchs-box .open-bar a i{position:relative; top:0.2em; left:0.2em; font-size:2em;}
+/* section 1*/
+.bg-1 {background-image: url("img/Banners/315891-P8RUWI-712 1.png");max-width: 100%;max-height: auto;height: 100%;background-position: center;background-repeat: no-repeat; background-size: cover;}
+.button {width: 170px;height: 45px;font-size: 14px;letter-spacing: 2.5px;font-weight: 500;color: #13455E;background-color: #F5F9FA;border: none;border-radius: 10px;box-shadow: 0px 10px 17px rgba(0, 0, 0, 0.1);transition: all 0.3s ease 0s;cursor: pointer;outline: none;font-family: "Sofia pro medium";letter-spacing: normal;margin-left: 113px;}
+.button-banner{margin-left: 75px;}
+.button:hover {background-color: #59ABB3;box-shadow: 0px 15px 20px #59ABB3;color: #fff;transform: translateY(-7px);}
+.text-banner{float: left;margin: 100px 50px 50 90px;text-align: justify;letter-spacing: 1px;}
+/* section 2*/
+.bg-2 {background-color: white;width: 100%; height: auto; background-position: center;background-repeat: no-repeat;background-size: cover; }
+.box {transition: box-shadow .3s;width: 100%;height: 13rem;margin-bottom: 30px;border-radius: 25px;background: #fff;float: left;box-shadow: 10px 10px 10px rgba(33,33,33,.2);}
+.box:hover {box-shadow: 0 0 11px rgba(33,33,33,.2); }
+/*section 3 */
+.bg-second{background-color: #13455E; }
+.third{font-style: normal;font-weight: 500;font-size: 22px;line-height: 32px;text-align: center;color: #FFFFFF; margin-top:100px; margin-bottom:100px}
+
+/*section 4*/
+.fourth-title{font-family: 'Sofia pro bold';font-style: normal;font-weight: bold;font-size: 22px;line-height: 38px;}
+input[type="radio"] {display: none;}
+.start {-webkit-text-stroke: 1px  #D56E67 ; color: transparent; }
+.classification {direction: rtl;unicode-bidi: bidi-override;}
+.start:hover,.start:hover ~ .start {color: #D56E67;}
+input[type="radio"]:checked ~ .start {color: #D56E67;}
+
+/*section 5*/
+.text-white{color: #fff;font-size: 18px !important; font-family: "Sofia pro"; }
+.title-white{color: #fff; margin-top: 50px; font-family: "Sofia pro bold";}  
+.text-center{text-align: center;}
+.bg-5{width:100%;height:100%;display:flex;flex-direction:column;justify-content: center;align-items:center;background-image:url(img/Background/fondo2.png);background-repeat:no-repeat;background-size:100% 100%;} 
+.bg-5 form{width:35%;height:100%;background-color:#fff;display:flex;flex-direction:column;justify-content: center;align-items:center;border-radius:1em;padding:3em 0em;margin-top:1em;margin-bottom:13em; }
+.bg-5 form h3{width:85%;font-size:1em;text-align:center !important;}
+.bg-5 form fieldset{width:100%;display:flex;flex-direction:column;justify-content: center;align-items:center;}
+.bg-5 form input{width:85%;padding:.75em;margin-bottom:1.5em;border:none;border-radius:0.5em;outline:none;box-shadow: 2px 10px 15px #eeeeee;}
+.bg-5 form button{width:55%;padding:1.3em;margin-bottom:1.5em;border:none;border-radius:0.5em;color:#D56E67;background-color:rgba(255, 255, 255, 0);box-shadow: 6px 10px 15px #eeeeee;}    
+.bg-5 form button:hover{color:#fff;background-color: #D56E67;}
+/*section 6*/
+.vl {width: 0px;border: 1px solid #0f3f56;height: 350px;}
+.text-bold{font-family: 'Sofia pro bold';}
+.text-white-6{color:#fff;}
+.text-white-6 img{ margin-right:20px ; width: 20px; }
+.icoYoutube img{width: 100%;max-width: 40px;height: auto;margin: 10px;}
+.icoLinkedin img{  width: 100%; max-width: 40px; height: auto; margin: 10px;}
+.form-control-sm {height: calc(1.5em + .5rem + 2px);padding: .25rem .5rem;font-size: .875rem;line-height: 1.5;border-radius: .2rem;background-color: rgba(218, 218, 218, 1);}
+textarea.form-control {height: auto;background-color: rgba(218, 218, 218, 1);}
+.button-info {width: 150px;height: 45px;font-size: 12px;letter-spacing: 2.5px;font-weight: 500; color: #ffffff;background-color: #13455E;border: none;border-radius: 10px;box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.5);transition: all 0.3s ease 0s; cursor: pointer;outline: none;font-family: "Sofia pro medium";letter-spacing: normal;}
+.button-info:hover {background-color: #13455E;box-shadow: 0px 15px 20px rgba(19, 69, 94, 0.6);color: #fff;transform: translateY(-7px);}
+}
+
+
+
+
+@media screen and (min-width:1750px) and (max-width:1920px){
+  /*header*/
+  header{box-shadow: 0px 5px 40px #f5f5f5;}
+  header nav{display:flex;flex-direction: row;justify-content: center;}
+  header nav .logotipo{display:flex;flex-direction:row;justify-content: space-between;}
+  header nav .searchs-box{display:flex;flex-direction:row;justify-content: flex-end;align-items: flex-end; }
+  header nav .searchs-box span{position:absolute;top:1em;left:1.6em;color:#c4c4c4;}
+  header nav .searchs-box .form-control{padding:1.5em 0em 1.5em 2em;border: solid 1px #c4c4c4; border-radius:0.7em;}
+  header nav .searchs-box .tipo-usuario button{width:100%;padding:0.7em 0em 0.7em 0em; background-color:rgba(255, 255, 255, 0);border-radius:0.7em;border:solid 1px #59abb3;text-align:left;padding-left:1em;color:#59abb3;}
+  header nav .searchs-box .tipo-usuario button i{width:55%;  font-size: 22px; text-align:right;}
+  header nav .searchs-box .tipo-usuario button:focus{outline:none;}
+  header nav .searchs-box .tipo-usuario .dropdown-menu{width:100%;}
+  header nav .searchs-box .tipo-usuario .dropdown-menu a{color:#59abb3;}
+  header nav .searchs-box .open-bar{width:50%;position:relative; right:2em;margin-top:-1em;}
+  header nav .searchs-box .open-bar a{width:100%;text-align:right;font-size:1em;color:#59abb3;}
+  header nav .searchs-box .open-bar a i{position:relative; top:0.2em; left:0.2em; font-size:2em;}
+/* section 1*/
+.bg-1 {background-image: url("img/Banners/315891-P8RUWI-712 1.png");max-width: 100%;max-height: auto;height: 100%;background-position: center;background-repeat: no-repeat; background-size: cover;}
+.button {width: 170px;height: 45px;font-size: 14px;letter-spacing: 2.5px;font-weight: 500;color: #13455E;background-color: #F5F9FA;border: none;border-radius: 10px;box-shadow: 0px 10px 17px rgba(0, 0, 0, 0.1);transition: all 0.3s ease 0s;cursor: pointer;outline: none;font-family: "Sofia pro medium";letter-spacing: normal;margin-left: 113px;}
+.button-banner{margin-left: 75px;}
+.button:hover {background-color: #59ABB3;box-shadow: 0px 15px 20px #59ABB3;color: #fff;transform: translateY(-7px);}
+.text-banner{float: left;margin: 100px 50px 50 90px;text-align: justify;letter-spacing: 1px;}
+/* section 2*/
+.bg-2 {background-color: white;width: 100%; height: auto; background-position: center;background-repeat: no-repeat;background-size: cover; }
+.box {transition: box-shadow .3s;width: 100%;height: 13rem;margin-bottom: 30px;border-radius: 25px;background: #fff;float: left;box-shadow: 10px 10px 10px rgba(33,33,33,.2);}
+.box:hover {box-shadow: 0 0 11px rgba(33,33,33,.2); }
+/*section 3 */
+.bg-second{background-color: #13455E; }
+.third{font-style: normal;font-weight: 500;font-size: 22px;line-height: 32px;text-align: center;color: #FFFFFF; margin-top:100px; margin-bottom:100px}
+
+/*section 4*/
+.fourth-title{font-family: 'Sofia pro bold';font-style: normal;font-weight: bold;font-size: 22px;line-height: 38px;}
+input[type="radio"] {display: none;}
+.start {-webkit-text-stroke: 1px  #D56E67 ; color: transparent; }
+.classification {direction: rtl;unicode-bidi: bidi-override;}
+.start:hover,.start:hover ~ .start {color: #D56E67;}
+input[type="radio"]:checked ~ .start {color: #D56E67;}
+
+/*section 5*/
+.text-white{color: #fff;font-size: 18px !important; font-family: "Sofia pro"; }
+.title-white{color: #fff; margin-top: 50px; font-family: "Sofia pro bold";}  
+.text-center{text-align: center;}
+.bg-5{width:100%;height:100%;display:flex;flex-direction:column;justify-content: center;align-items:center;background-image:url(img/Background/fondo2.png);background-repeat:no-repeat;background-size:100% 100%;} 
+.bg-5 form{width:35%;height:100%;background-color:#fff;display:flex;flex-direction:column;justify-content: center;align-items:center;border-radius:1em;padding:3em 0em;margin-top:1em;margin-bottom:13em; }
+.bg-5 form h3{width:85%;font-size:1em;text-align:center !important;}
+.bg-5 form fieldset{width:100%;display:flex;flex-direction:column;justify-content: center;align-items:center;}
+.bg-5 form input{width:85%;padding:.75em;margin-bottom:1.5em;border:none;border-radius:0.5em;outline:none;box-shadow: 2px 10px 15px #eeeeee;}
+.bg-5 form button{width:55%;padding:1.3em;margin-bottom:1.5em;border:none;border-radius:0.5em;color:#D56E67;background-color:rgba(255, 255, 255, 0);box-shadow: 6px 10px 15px #eeeeee;}    
+.bg-5 form button:hover{color:#fff;background-color: #D56E67;}
+/*section 6*/
+.vl {width: 0px;border: 1px solid #0f3f56;height: 350px;}
+.text-bold{font-family: 'Sofia pro bold';}
+.text-white-6{color:#fff;}
+.text-white-6 img{ margin-right:20px ; width: 20px; }
+.icoYoutube img{width: 100%;max-width: 40px;height: auto;margin: 10px;}
+.icoLinkedin img{  width: 100%; max-width: 40px; height: auto; margin: 10px;}
+.form-control-sm {height: calc(1.5em + .5rem + 2px);padding: .25rem .5rem;font-size: .875rem;line-height: 1.5;border-radius: .2rem;background-color: rgba(218, 218, 218, 1);}
+textarea.form-control {height: auto;background-color: rgba(218, 218, 218, 1);}
+.button-info {width: 150px;height: 45px;font-size: 12px;letter-spacing: 2.5px;font-weight: 500; color: #ffffff;background-color: #13455E;border: none;border-radius: 10px;box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.5);transition: all 0.3s ease 0s; cursor: pointer;outline: none;font-family: "Sofia pro medium";letter-spacing: normal;}
+.button-info:hover {background-color: #13455E;box-shadow: 0px 15px 20px rgba(19, 69, 94, 0.6);color: #fff;transform: translateY(-7px);}
+}
+
+@media screen and (min-width:1651px) and (max-width:1749px){
+  /* header*/
+  header{box-shadow: 0px 5px 40px #f5f5f5;}
+    header nav{display:flex;flex-direction: row;justify-content: center;}
+    header nav .logotipo{display:flex;flex-direction:row;justify-content: space-between;}
+    header nav .searchs-box{width:100%;display:flex;flex-direction:row;justify-content: flex-end;align-items: flex-end;}
+    header nav .searchs-box span{position:absolute;top:1em;left:1.6em;color:#c4c4c4;}
+    header nav .searchs-box .form-control{padding:1.5em 0em 1.5em 2em;border: solid 1px #c4c4c4; border-radius:0.7em;}
+    header nav .searchs-box .tipo-usuario{width:100%;}
+    header nav .searchs-box .tipo-usuario button{width:100%;padding:0.7em 0em 0.7em 0em;background-color:rgba(255, 255, 255, 0);border-radius:0.7em;border:solid 1px #59abb3;text-align:left;padding-left:0.5em;color:#59abb3;}
+    header nav .searchs-box .tipo-usuario button i{width:37%;text-align:right;}
+    header nav .searchs-box .tipo-usuario button:focus{outline:none;}
+    header nav .searchs-box .tipo-usuario .dropdown-menu{width:100%; height:auto;}
+    header nav .searchs-box .tipo-usuario .dropdown-menu a{width:100%;color:#59abb3;}
+    header nav .searchs-box .open-bar{width:100%;position:relative;bottom:0.5em; }
+    header nav .searchs-box .open-bar a{font-size:0.8em;color:#59abb3;}
+    header nav .searchs-box .open-bar a i{position:relative; top:0.2em; left:0.2em; font-size:1.5em;}
+  /* section 1*/
+.bg-1 {background-image: url("img/Banners/315891-P8RUWI-712 1.png");max-width: 100%;max-height: auto;height: 100%;background-position: center;background-repeat: no-repeat; background-size: cover;}
+.button {width: 170px;height: 45px;font-family: 'Roboto', sans-serif;font-size: 12px;letter-spacing: 2.5px;font-weight: 500;color: #13455E;background-color: #F5F9FA;border: none;border-radius: 10px;box-shadow: 0px 10px 17px rgba(0, 0, 0, 0.1);transition: all 0.3s ease 0s;cursor: pointer;outline: none;font-family: "Sofia pro medium";letter-spacing: normal;margin-left: 113px;}
+.button-banner{margin-left: 75px;}
+.button:hover {background-color: #59ABB3;box-shadow: 0px 15px 20px #59ABB3;color: #fff;transform: translateY(-7px);}
+.text-banner{float: left;margin: 100px 50px 50 90px;text-align: justify;letter-spacing: 1px;}
+/* section 2*/
+.bg-2 {background-color: white;width: 100%; height: auto; background-position: center;background-repeat: no-repeat;background-size: cover; }
+.box {transition: box-shadow .3s;width: 100%;height: 13rem;margin-bottom: 30px;border-radius: 25px;background: #fff;float: left;box-shadow: 10px 10px 10px rgba(33,33,33,.2);}
+.box:hover {box-shadow: 0 0 11px rgba(33,33,33,.2); }
+/*section 3 */
+.bg-second{background-color: #13455E; }
+.third{font-style: normal;font-weight: 500;font-size: 22px;line-height: 32px;text-align: center;color: #FFFFFF; margin-top:100px; margin-bottom:100px}
+
+/*section 4*/
+.fourth-title{font-family: 'Sofia pro bold';font-style: normal;font-weight: bold;font-size: 22px;line-height: 38px;}
+input[type="radio"] {display: none;}
+.start {-webkit-text-stroke: 1px  #D56E67 ; color: transparent; }
+.classification {direction: rtl;unicode-bidi: bidi-override;}
+.start:hover,.start:hover ~ .start {color: #D56E67;}
+input[type="radio"]:checked ~ .start {color: #D56E67;}
+
+/*section 5*/
+.text-white{color: #fff;font-size: 18px !important; font-family: "Sofia pro"; }
+.title-white{color: #fff; margin-top: 50px; font-family: "Sofia pro bold";}  
+.text-center{text-align: center;}
+.bg-5{width:100%;height:100%;display:flex;flex-direction:column;justify-content: center;align-items:center;background-image:url(img/Background/fondo2.png);background-repeat:no-repeat;background-size:100% 100%;} 
+.bg-5 form{width:35%;height:100%;background-color:#fff;display:flex;flex-direction:column;justify-content: center;align-items:center;border-radius:1em;padding:3em 0em;margin-top:1em;margin-bottom:13em; }
+.bg-5 form h3{width:85%;font-size:1em;text-align:center !important;}
+.bg-5 form fieldset{width:100%;display:flex;flex-direction:column;justify-content: center;align-items:center;}
+.bg-5 form input{width:85%;padding:.75em;margin-bottom:1.5em;border:none;border-radius:0.5em;outline:none;box-shadow: 2px 10px 15px #eeeeee;}
+.bg-5 form button{width:55%;padding:1.3em;margin-bottom:1.5em;border:none;border-radius:0.5em;color:#D56E67;background-color:rgba(255, 255, 255, 0);box-shadow: 6px 10px 15px #eeeeee;}    
+.bg-5 form button:hover{color:#fff;background-color: #D56E67;}
+/*section 6*/
+.vl {width: 0px;border: 1px solid #0f3f56;height: 350px;}
+.text-bold{font-family: 'Sofia pro bold';}
+.text-white-6{color:#fff;}
+.text-white-6 img{ margin-right:20px ; width: 20px; }
+.icoYoutube img{width: 100%;max-width: 40px;height: auto;margin: 10px;}
+.icoLinkedin img{  width: 100%; max-width: 40px; height: auto; margin: 10px;}
+.form-control-sm {height: calc(1.5em + .5rem + 2px);padding: .25rem .5rem;font-size: .875rem;line-height: 1.5;border-radius: .2rem;background-color: rgba(218, 218, 218, 1);}
+textarea.form-control {height: auto;background-color: rgba(218, 218, 218, 1);}
+.button-info {width: 150px;height: 45px;font-size: 12px;letter-spacing: 2.5px;font-weight: 500; color: #ffffff;background-color: #13455E;border: none;border-radius: 10px;box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.5);transition: all 0.3s ease 0s; cursor: pointer;outline: none;font-family: "Sofia pro medium";letter-spacing: normal;}
+.button-info:hover {background-color: #13455E;box-shadow: 0px 15px 20px rgba(19, 69, 94, 0.6);color: #fff;transform: translateY(-7px);}
+}
+
+@media screen and (min-width:1551px) and (max-width:1650px){
+  /* header*/
+  header{box-shadow: 0px 5px 40px #f5f5f5;}
+  header nav{display:flex;flex-direction: row;justify-content: center;}
+  header nav .logotipo{display:flex;flex-direction:row;justify-content: space-between;}
+  header nav .searchs-box{width:100%;display:flex;flex-direction:row;justify-content: flex-end;align-items: flex-end;}
+  header nav .searchs-box span{position:absolute;top:1em;left:1.6em;color:#c4c4c4;}
+  header nav .searchs-box .form-control{padding:1.5em 0em 1.5em 2em;border: solid 1px #c4c4c4; border-radius:0.7em;}
+  header nav .searchs-box .tipo-usuario{width:100%;}
+  header nav .searchs-box .tipo-usuario button{width:100%;padding:0.7em 0em 0.7em 0em;background-color:rgba(255, 255, 255, 0);border-radius:0.7em;border:solid 1px #59abb3;text-align:left;padding-left:0.5em;color:#59abb3;}
+  header nav .searchs-box .tipo-usuario button i{width:37%;text-align:right;}
+  header nav .searchs-box .tipo-usuario button:focus{outline:none;}
+  header nav .searchs-box .tipo-usuario .dropdown-menu{width:100%; height:auto;}
+  header nav .searchs-box .tipo-usuario .dropdown-menu a{width:100%;color:#59abb3;}
+  header nav .searchs-box .open-bar{width:100%;position:relative;bottom:0.5em; }
+  header nav .searchs-box .open-bar a{font-size:0.8em;color:#59abb3;}
+  header nav .searchs-box .open-bar a i{position:relative; top:0.2em; left:0.2em; font-size:2.0em;}
+  /* section 1*/
+.bg-1 {background-image: url("img/Banners/315891-P8RUWI-712 1.png");max-width: 100%;max-height: auto;height: 100%;background-position: center;background-repeat: no-repeat; background-size: cover;}
+.button {width: 170px;height: 45px;font-family: 'Roboto', sans-serif;font-size: 12px;letter-spacing: 2.5px;font-weight: 500;color: #13455E;background-color: #F5F9FA;border: none;border-radius: 10px;box-shadow: 0px 10px 17px rgba(0, 0, 0, 0.1);transition: all 0.3s ease 0s;cursor: pointer;outline: none;font-family: "Sofia pro medium";letter-spacing: normal;margin-left: 113px;}
+.button-banner{margin-left: 75px;}
+.button:hover {background-color: #59ABB3;box-shadow: 0px 15px 20px #59ABB3;color: #fff;transform: translateY(-7px);}
+.text-banner{float: left;margin: 100px 50px 50 90px;text-align: justify;letter-spacing: 1px;}
+/* section 2*/
+.bg-2 {background-color: white;width: 100%; height: auto; background-position: center;background-repeat: no-repeat;background-size: cover; }
+.box {transition: box-shadow .3s;width: 100%;height: 13rem;margin-bottom: 30px;border-radius: 25px;background: #fff;float: left;box-shadow: 10px 10px 10px rgba(33,33,33,.2);}
+.box:hover {box-shadow: 0 0 11px rgba(33,33,33,.2); }
+/*section 3 */
+.bg-second{background-color: #13455E; }
+.third{font-style: normal;font-weight: 500;font-size: 22px;line-height: 32px;text-align: center;color: #FFFFFF; margin-top:100px; margin-bottom:100px}
+
+/*section 4*/
+.fourth-title{font-family: 'Sofia pro bold';font-style: normal;font-weight: bold;font-size: 22px;line-height: 38px;}
+input[type="radio"] {display: none;}
+.start {-webkit-text-stroke: 1px  #D56E67 ; color: transparent; }
+.classification {direction: rtl;unicode-bidi: bidi-override;}
+.start:hover,.start:hover ~ .start {color: #D56E67;}
+input[type="radio"]:checked ~ .start {color: #D56E67;}
+
+/*section 5*/
+.text-white{color: #fff;font-size: 18px !important; font-family: "Sofia pro"; }
+.title-white{color: #fff; margin-top: 50px; font-family: "Sofia pro bold";}  
+.text-center{text-align: center;}
+.bg-5{width:100%;height:100%;display:flex;flex-direction:column;justify-content: center;align-items:center;background-image:url(img/Background/fondo2.png);background-repeat:no-repeat;background-size:100% 100%;} 
+.bg-5 form{width:35%;height:100%;background-color:#fff;display:flex;flex-direction:column;justify-content: center;align-items:center;border-radius:1em;padding:3em 0em;margin-top:1em;margin-bottom:13em; }
+.bg-5 form h3{width:85%;font-size:1em;text-align:center !important;}
+.bg-5 form fieldset{width:100%;display:flex;flex-direction:column;justify-content: center;align-items:center;}
+.bg-5 form input{width:85%;padding:.75em;margin-bottom:1.5em;border:none;border-radius:0.5em;outline:none;box-shadow: 2px 10px 15px #eeeeee;}
+.bg-5 form button{width:55%;padding:1.3em;margin-bottom:1.5em;border:none;border-radius:0.5em;color:#D56E67;background-color:rgba(255, 255, 255, 0);box-shadow: 6px 10px 15px #eeeeee;}    
+.bg-5 form button:hover{color:#fff;background-color: #D56E67;}
+/*section 6*/
+.vl {width: 0px;border: 1px solid #0f3f56;height: 350px;}
+.text-bold{font-family: 'Sofia pro bold';}
+.text-white-6{color:#fff;}
+.text-white-6 img{ margin-right:20px ; width: 20px; }
+.icoYoutube img{width: 100%;max-width: 40px;height: auto;margin: 10px;}
+.icoLinkedin img{  width: 100%; max-width: 40px; height: auto; margin: 10px;}
+.form-control-sm {height: calc(1.5em + .5rem + 2px);padding: .25rem .5rem;font-size: .875rem;line-height: 1.5;border-radius: .2rem;background-color: rgba(218, 218, 218, 1);}
+textarea.form-control {height: auto;background-color: rgba(218, 218, 218, 1);}
+.button-info {width: 150px;height: 45px;font-size: 12px;letter-spacing: 2.5px;font-weight: 500; color: #ffffff;background-color: #13455E;border: none;border-radius: 10px;box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.5);transition: all 0.3s ease 0s; cursor: pointer;outline: none;font-family: "Sofia pro medium";letter-spacing: normal;}
+.button-info:hover {background-color: #13455E;box-shadow: 0px 15px 20px rgba(19, 69, 94, 0.6);color: #fff;transform: translateY(-7px);}
+
+}
+
+@media screen and (min-width:1400px) and (max-width:1550px){
+  /* header*/
+  header{box-shadow: 0px 5px 40px #f5f5f5;}
+    header nav{display:flex;flex-direction: row;justify-content: center;}
+    header nav .logotipo{display:flex;flex-direction:row;justify-content: space-between;}
+    header nav .searchs-box{width:100%;display:flex;flex-direction:row;justify-content: flex-end;align-items: flex-end;}
+    header nav .searchs-box span{position:absolute;top:1em;left:1.6em;color:#c4c4c4;}
+    header nav .searchs-box .form-control{padding:1.5em 0em 1.5em 2em;border: solid 1px #c4c4c4; border-radius:0.7em;}
+    header nav .searchs-box .tipo-usuario{width:100%;}
+    header nav .searchs-box .tipo-usuario button{width:100%;padding:0.7em 0em 0.7em 0em;background-color:rgba(255, 255, 255, 0);border-radius:0.7em;border:solid 1px #59abb3;text-align:left;padding-left:0.5em;color:#59abb3;}
+    header nav .searchs-box .tipo-usuario button i{width:37%;text-align:right;}
+    header nav .searchs-box .tipo-usuario button:focus{outline:none;}
+    header nav .searchs-box .tipo-usuario .dropdown-menu{width:100%; height:auto;}
+    header nav .searchs-box .tipo-usuario .dropdown-menu a{width:100%;color:#59abb3;}
+    header nav .searchs-box .open-bar{width:100%;position:relative;bottom:0.5em; }
+    header nav .searchs-box .open-bar a{font-size:0.8em;color:#59abb3;}
+    header nav .searchs-box .open-bar a i{position:relative; top:0.2em; left:0.2em; font-size:2.0em;}
+  /* section 1*/
+.bg-1 {background-image: url("img/Banners/315891-P8RUWI-712 1.png");max-width: 100%;max-height: auto;height: 100%;background-position: center;background-repeat: no-repeat; background-size: cover;}
+.button {width: 170px;height: 45px;font-family: 'Roboto', sans-serif;font-size: 12px;letter-spacing: 2.5px;font-weight: 500;color: #13455E;background-color: #F5F9FA;border: none;border-radius: 10px;box-shadow: 0px 10px 17px rgba(0, 0, 0, 0.1);transition: all 0.3s ease 0s;cursor: pointer;outline: none;font-family: "Sofia pro medium";letter-spacing: normal;margin-left: 113px;}
+.button-banner{margin-left: 75px;}
+.button:hover {background-color: #59ABB3;box-shadow: 0px 15px 20px #59ABB3;color: #fff;transform: translateY(-7px);}
+.text-banner{float: left;margin: 100px 50px 50 90px;text-align: justify;letter-spacing: 1px;}
+/* section 2*/
+.bg-2 {background-color: white;width: 100%; height: auto; background-position: center;background-repeat: no-repeat;background-size: cover; }
+.box {transition: box-shadow .3s;width: 100%;height: 13rem;margin-bottom: 30px;border-radius: 25px;background: #fff;float: left;box-shadow: 10px 10px 10px rgba(33,33,33,.2);}
+.box:hover {box-shadow: 0 0 11px rgba(33,33,33,.2); }
+/*section 3 */
+.bg-second{background-color: #13455E; }
+.third{font-style: normal;font-weight: 500;font-size: 22px;line-height: 32px;text-align: center;color: #FFFFFF; margin-top:100px; margin-bottom:100px}
+
+/*section 4*/
+.fourth-title{font-family: 'Sofia pro bold';font-style: normal;font-weight: bold;font-size: 22px;line-height: 38px;}
+input[type="radio"] {display: none;}
+.start {-webkit-text-stroke: 1px  #D56E67 ; color: transparent; }
+.classification {direction: rtl;unicode-bidi: bidi-override;}
+.start:hover,.start:hover ~ .start {color: #D56E67;}
+input[type="radio"]:checked ~ .start {color: #D56E67;}
+
+/*section 5*/
+.text-white{color: #fff;font-size: 18px !important; font-family: "Sofia pro"; }
+.title-white{color: #fff; margin-top: 50px; font-family: "Sofia pro bold";}  
+.text-center{text-align: center;}
+.bg-5{width:100%;height:100%;display:flex;flex-direction:column;justify-content: center;align-items:center;background-image:url(img/Background/fondo2.png);background-repeat:no-repeat;background-size:100% 100%;} 
+.bg-5 form{width:35%;height:100%;background-color:#fff;display:flex;flex-direction:column;justify-content: center;align-items:center;border-radius:1em;padding:3em 0em;margin-top:1em;margin-bottom:13em; }
+.bg-5 form h3{width:85%;font-size:1em;text-align:center !important;}
+.bg-5 form fieldset{width:100%;display:flex;flex-direction:column;justify-content: center;align-items:center;}
+.bg-5 form input{width:85%;padding:.75em;margin-bottom:1.5em;border:none;border-radius:0.5em;outline:none;box-shadow: 2px 10px 15px #eeeeee;}
+.bg-5 form button{width:55%;padding:1.3em;margin-bottom:1.5em;border:none;border-radius:0.5em;color:#D56E67;background-color:rgba(255, 255, 255, 0);box-shadow: 6px 10px 15px #eeeeee;}    
+.bg-5 form button:hover{color:#fff;background-color: #D56E67;}
+/*section 6*/
+.vl {width: 0px;border: 1px solid #0f3f56;height: 350px;}
+.text-bold{font-family: 'Sofia pro bold';}
+.text-white-6{color:#fff;}
+.text-white-6 img{ margin-right:20px ; width: 20px; }
+.icoYoutube img{width: 100%;max-width: 40px;height: auto;margin: 10px;}
+.icoLinkedin img{  width: 100%; max-width: 40px; height: auto; margin: 10px;}
+.form-control-sm {height: calc(1.5em + .5rem + 2px);padding: .25rem .5rem;font-size: .875rem;line-height: 1.5;border-radius: .2rem;background-color: rgba(218, 218, 218, 1);}
+textarea.form-control {height: auto;background-color: rgba(218, 218, 218, 1);}
+.button-info {width: 150px;height: 45px;font-size: 12px;letter-spacing: 2.5px;font-weight: 500; color: #ffffff;background-color: #13455E;border: none;border-radius: 10px;box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.5);transition: all 0.3s ease 0s; cursor: pointer;outline: none;font-family: "Sofia pro medium";letter-spacing: normal;}
+.button-info:hover {background-color: #13455E;box-shadow: 0px 15px 20px rgba(19, 69, 94, 0.6);color: #fff;transform: translateY(-7px);}
+}
+
+@media screen and (min-width:1000px) and (max-width:1399px){
+  /*header*/
+  header{box-shadow: 0px 5px 40px #f5f5f5;}
+  header nav{display:flex;flex-direction: row;justify-content: center;}
+  header nav .logotipo{display:flex;flex-direction:row;justify-content: space-between;}
+  header nav .searchs-box{display:flex;flex-direction:row;justify-content: center;align-items: center;}
+  header nav .searchs-box span{position:absolute;top:1em;left:1.6em;color:#c4c4c4;}
+  header nav .searchs-box .form-control{padding:1.5em 0em 1.5em 2em;border: solid 1px #c4c4c4; border-radius:0.7em;}
+  header nav .searchs-box .tipo-usuario button{width:100%;padding:0.7em 0em 0.7em 0em;background-color:rgba(255, 255, 255, 0);border-radius:0.7em;border:solid 1px #59abb3;text-align:left;padding-left:0.5em;color:#59abb3;}
+  header nav .searchs-box .tipo-usuario button i{width:30%; text-align:right;padding-left:0em;}
+  header nav .searchs-box .tipo-usuario button:focus{outline:none;}
+  header nav .searchs-box .tipo-usuario .dropdown-menu{width:100%; }
+  header nav .searchs-box .tipo-usuario .dropdown-menu a{color:#59abb3;}
+  header nav .searchs-box .open-bar{margin-top:0em; }
+  header nav .searchs-box .open-bar a{font-size:1.3em;color:#59abb3;}
+  /* section 1*/
+.bg-1 {background-image: url("img/Banners/315891-P8RUWI-712 1.png");max-width: 100%;max-height: auto;height: 100%;background-position: center;background-repeat: no-repeat; background-size: cover;}
+.button {width: 170px;height: 45px;font-family: 'Roboto', sans-serif;font-size: 12px;letter-spacing: 2.5px;font-weight: 500;color: #13455E;background-color: #F5F9FA;border: none;border-radius: 10px;box-shadow: 0px 10px 17px rgba(0, 0, 0, 0.1);transition: all 0.3s ease 0s;cursor: pointer;outline: none;font-family: "Sofia pro medium";letter-spacing: normal;margin-left: 113px;}
+.button-banner{margin-left: 75px;}
+.button:hover {background-color: #59ABB3;box-shadow: 0px 15px 20px #59ABB3;color: #fff;transform: translateY(-7px);}
+.text-banner{float: left;margin: 100px 50px 50 90px;text-align: justify;letter-spacing: 1px;}
+/* section 2*/
+.bg-2 {background-color: white;width: 100%; height: auto; background-position: center;background-repeat: no-repeat;background-size: cover; }
+.box {transition: box-shadow .3s;width: 100%;height: 13rem;margin-bottom: 30px;border-radius: 25px;background: #fff;float: left;box-shadow: 10px 10px 10px rgba(33,33,33,.2);}
+.box:hover {box-shadow: 0 0 11px rgba(33,33,33,.2); }
+/*section 3 */
+.bg-second{background-color: #13455E; }
+.third{font-style: normal;font-weight: 500;font-size: 22px;line-height: 32px;text-align: center;color: #FFFFFF; margin-top:100px; margin-bottom:100px}
+
+/*section 4*/
+.fourth-title{font-family: 'Sofia pro bold';font-style: normal;font-weight: bold;font-size: 22px;line-height: 38px;}
+input[type="radio"] {display: none;}
+.start {-webkit-text-stroke: 1px  #D56E67 ; color: transparent; }
+.classification {direction: rtl;unicode-bidi: bidi-override;}
+.start:hover,.start:hover ~ .start {color: #D56E67;}
+input[type="radio"]:checked ~ .start {color: #D56E67;}
+
+/*section 5*/
+.text-white{color: #fff;font-size: 18px !important; font-family: "Sofia pro"; text-align: center; }
+.title-white{color: #fff; margin-top: 50px; font-family: "Sofia pro bold"; text-align: center;}  
+.text-center{text-align: center;}
+.bg-5{width:100%;height:100%;display:flex;flex-direction:column;justify-content: center;align-items:center;background-image:url(img/Background/fondo2.png);background-repeat:no-repeat;background-size:100% 100%;} 
+.bg-5 form{width:100%;height:100%;background-color:#fff;display:flex;flex-direction:column;justify-content: center;align-items:center;border-radius:1em;padding:3em 0em;margin-top:1em;margin-bottom:13em; }
+.bg-5 form h3{width:100%;font-size: .75em;text-align:center !important;}
+.bg-5 form fieldset{width:100%;display:flex;flex-direction:column;justify-content: center;align-items:center;}
+.bg-5 form input{width:85%;padding:.75em;margin-bottom:1.5em;border:none;border-radius:0.5em;outline:none;box-shadow: 2px 10px 15px #eeeeee;}
+.bg-5 form button{width:55%;padding:1.3em;margin-bottom:1.5em;border:none;border-radius:0.5em;color:#D56E67;background-color:rgba(255, 255, 255, 0);box-shadow: 6px 10px 15px #eeeeee;}    
+.bg-5 form button:hover{color:#fff;background-color: #D56E67;}
+/*section 6*/
+.vl {width: 0px;border: 1px solid #0f3f56;height: 350px;}
+.text-bold{font-family: 'Sofia pro bold';}
+.text-white-6{color:#fff;}
+.text-white-6 img{ margin-right:20px ; width: 20px; }
+.icoYoutube img{width: 100%;max-width: 40px;height: auto;margin: 10px;}
+.icoLinkedin img{  width: 100%; max-width: 40px; height: auto; margin: 10px;}
+.form-control-sm {height: calc(1.5em + .5rem + 2px);padding: .25rem .5rem;font-size: .875rem;line-height: 1.5;border-radius: .2rem;background-color: rgba(218, 218, 218, 1);}
+textarea.form-control {height: auto;background-color: rgba(218, 218, 218, 1);}
+.button-info {width: 150px;height: 45px;font-size: 12px;letter-spacing: 2.5px;font-weight: 500; color: #ffffff;background-color: #13455E;border: none;border-radius: 10px;box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.5);transition: all 0.3s ease 0s; cursor: pointer;outline: none;font-family: "Sofia pro medium";letter-spacing: normal;}
+.button-info:hover {background-color: #13455E;box-shadow: 0px 15px 20px rgba(19, 69, 94, 0.6);color: #fff;transform: translateY(-7px);}
+}
+
+
+@media screen and (min-width:768px) and (max-width:999px){
+  /* header*/
+  header .navbar-toggler{display:none;}
+  header{box-shadow: 0px 5px 40px #f5f5f5;}
+  header nav{display:flex;flex-direction: row;justify-content: center;}
+  header nav .logotipo{display:flex;flex-direction:row;justify-content: space-between;}
+  header nav .logotipo img{width:100%;}
+  header nav .searchs-box{display:flex;flex-direction:row;justify-content: flex-end; align-items:flex-end;}
+  header nav .searchs-box span{position:absolute;top:1em;left:1.6em;color:#c4c4c4;}
+  header nav .searchs-box .form-control{padding:1.5em 0em 1.5em 2em;border: solid 1px #c4c4c4; border-radius:0.7em;}
+  header nav .searchs-box .tipo-usuario button{width:100%;padding:0.7em 0em 0.7em 2em;background-color:rgba(255, 255, 255, 0);border-radius:0.7em;border:solid 1px #59abb3;text-align:left;padding-left:0.5em;color:#59abb3;}
+  header nav .searchs-box .tipo-usuario button i{width:20%; text-align:right;padding-left:0em;}
+  header nav .searchs-box .tipo-usuario .dropdown-menu{width:100%;}
+  header nav .searchs-box .tipo-usuario .dropdown-menu a{color:#59abb3;}
+  header nav .searchs-box .open-bar{margin-top:-1em; }
+  header nav .searchs-box .open-bar a{font-size:1.2em;color:#59abb3;}
+  /* section 1*/
+.bg-1 {background-image: url("img/Banners/315891-P8RUWI-712 1.png");max-width: 100%;max-height: auto;height: 100%;background-position: center;background-repeat: no-repeat; background-size: cover;}
+.button {width: 170px;height: 45px;font-family: 'Roboto', sans-serif;font-size: 12px;letter-spacing: 2.5px;font-weight: 500;color: #13455E;background-color: #F5F9FA;border: none;border-radius: 10px;box-shadow: 0px 10px 17px rgba(0, 0, 0, 0.1);transition: all 0.3s ease 0s;cursor: pointer;outline: none;font-family: "Sofia pro medium";letter-spacing: normal;margin-left: 113px;}
+.button-banner{margin-left: 75px;}
+.button:hover {background-color: #59ABB3;box-shadow: 0px 15px 20px #59ABB3;color: #fff;transform: translateY(-7px);}
+.text-banner{float: left;margin: 100px 50px 50 90px;text-align: justify;letter-spacing: 1px;}
+/* section 2*/
+.bg-2 {background-color: white;width: 100%; height: auto; background-position: center;background-repeat: no-repeat;background-size: cover; }
+.box {transition: box-shadow .3s;width: 100%;height: 13rem;margin-bottom: 30px;border-radius: 25px;background: #fff;float: left;box-shadow: 10px 10px 10px rgba(33,33,33,.2);}
+.box:hover {box-shadow: 0 0 11px rgba(33,33,33,.2); }
+/*section 3 */
+.bg-second{background-color: #13455E; }
+.third{font-style: normal;font-weight: 500;font-size: 22px;line-height: 32px;text-align: center;color: #FFFFFF; margin-top:100px; margin-bottom:100px}
+
+/*section 4*/
+.fourth-title{font-family: 'Sofia pro bold';font-style: normal;font-weight: bold;font-size: 22px;line-height: 38px;}
+input[type="radio"] {display: none;}
+.start {-webkit-text-stroke: 1px  #D56E67 ; color: transparent; }
+.classification {direction: rtl;unicode-bidi: bidi-override;}
+.start:hover,.start:hover ~ .start {color: #D56E67;}
+input[type="radio"]:checked ~ .start {color: #D56E67;}
+
+/*section 5*/
+.text-white{color: #fff;font-size: 18px !important; font-family: "Sofia pro"; text-align: center; }
+.title-white{color: #fff; margin-top: 50px; font-family: "Sofia pro bold"; text-align: center;}  
+.text-center{text-align: center;}
+.bg-5{width:100%;height:100%;display:flex;flex-direction:column;justify-content: center;align-items:center;background-image:url(img/Background/fondo2.png);background-repeat:no-repeat;background-size:100% 100%;} 
+.bg-5 form{width:100%;height:100%;background-color:#fff;display:flex;flex-direction:column;justify-content: center;align-items:center;border-radius:1em;padding:3em 0em;margin-top:1em;margin-bottom:13em; }
+.bg-5 form h3{width:100%;font-size: .75em;text-align:center !important;}
+.bg-5 form fieldset{width:100%;display:flex;flex-direction:column;justify-content: center;align-items:center;}
+.bg-5 form input{width:85%;padding:.75em;margin-bottom:1.5em;border:none;border-radius:0.5em;outline:none;box-shadow: 2px 10px 15px #eeeeee;}
+.bg-5 form button{width:55%;padding:1.3em;margin-bottom:1.5em;border:none;border-radius:0.5em;color:#D56E67;background-color:rgba(255, 255, 255, 0);box-shadow: 6px 10px 15px #eeeeee;}    
+.bg-5 form button:hover{color:#fff;background-color: #D56E67;}
+/*section 6*/
+.vl {width: 0px;border: 1px solid #0f3f56;height: 350px;}
+.text-bold{font-family: 'Sofia pro bold';}
+.text-white-6{color:#fff;}
+.text-white-6 img{ margin-right:20px ; width: 20px; }
+.icoYoutube img{width: 100%;max-width: 40px;height: auto;margin: 10px;}
+.icoLinkedin img{  width: 100%; max-width: 40px; height: auto; margin: 10px;}
+.form-control-sm {height: calc(1.5em + .5rem + 2px);padding: .25rem .5rem;font-size: .875rem;line-height: 1.5;border-radius: .2rem;background-color: rgba(218, 218, 218, 1);}
+textarea.form-control {height: auto;background-color: rgba(218, 218, 218, 1);}
+.button-info {width: 150px;height: 45px;font-size: 12px;letter-spacing: 2.5px;font-weight: 500; color: #ffffff;background-color: #13455E;border: none;border-radius: 10px;box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.5);transition: all 0.3s ease 0s; cursor: pointer;outline: none;font-family: "Sofia pro medium";letter-spacing: normal;}
+.button-info:hover {background-color: #13455E;box-shadow: 0px 15px 20px rgba(19, 69, 94, 0.6);color: #fff;transform: translateY(-7px);}
+}
+
+
+
+@media screen and (min-width:100px) and (max-width:767px){
+  /* header*/
+  header .navbar-toggler{display:none;}
+  header{box-shadow: 0px 5px 40px #f5f5f5;}
+  header nav{display:flex;flex-direction: column;justify-content: center;}
+  header nav .logotipo{display:flex;flex-direction:column;justify-content: center; align-items:center;}
+  header nav .searchs-box{display:flex;flex-direction:column;justify-content: space-around; align-items:center;}
+  header nav .searchs-box span{position:absolute;top:1em;left:1.6em;color: #C4C4C4;font-size: 17px;}
+  header nav .searchs-box .form-control{padding:1.5em 0em 1.5em 2em;border: 1px solid #C4C4C4;border-radius:0.7em; margin-bottom:0.5em;}
+  header nav .searchs-box .tipo-usuario button{width:100%;padding:0.7em 0em 0.7em 0em;background-color:rgba(255, 255, 255, 0);border-radius:0.7em;border:solid 1px #59abb3;text-align:left;padding-left:0.5em;color:#59abb3;}
+  header nav .searchs-box .tipo-usuario button i{width:55%;text-align:right;padding-left:0em;}
+  header nav .searchs-box .tipo-usuario .dropdown-menu{width:100%;}
+  header nav .searchs-box .tipo-usuario .dropdown-menu a{color:#59abb3;}
+  header nav .searchs-box .open-bar{display:none;margin-top:-1em; }
+  header nav .searchs-box .open-bar a{font-size:1.3em;color:#59abb3;}
+  /* section 1*/
+.bg-1 {background-image: url("img/Banners/315891-P8RUWI-712 1.png");max-width: 100%;height: 100%;  background-position: center center;background-repeat: no-repeat; background-size: cover;}
+.button { width: 170px; height: 45px; font-size: 14px;letter-spacing: 2.5px;font-weight: 500;    margin-top: 30px;color: #13455E;background-color: #F5F9FA;border: none;border-radius: 10px;box-shadow: 0px 10px 17px rgba(0, 0, 0, 0.1);transition: all 0.3s ease 0s;cursor: pointer;outline: none;font-family: "Sofia pro medium";letter-spacing: normal; margin-left: 0px;}
+.button-banner{margin-left: 0px;}
+.button:hover {background-color: #59ABB3;box-shadow: 0px 15px 20px #59ABB3;color: #fff;transform: translateY(-7px);}
+.text-banner{    float: left;margin: 0px 0px 0 0px;text-align: center;letter-spacing: 1px;}
+/* section 2*/
+.bg-2 {background-color: white;width: 100%; height: auto; background-position: center;background-repeat: no-repeat;background-size: cover; }
+.box {transition: box-shadow .3s;width: 100%;height: 13rem;margin-bottom: 30px;border-radius: 25px;background: #fff;float: left;box-shadow: 10px 10px 10px rgba(33,33,33,.2);}
+.box:hover {box-shadow: 0 0 11px rgba(33,33,33,.2); }
+/*section 3 */
+.bg-second{background-color: #13455E; }
+.third{font-style: normal;font-weight: 500;font-size: 22px;line-height: 32px;text-align: center;color: #FFFFFF; margin-top:100px; margin-bottom:100px}
+
+/*section 4*/
+.fourth-title{font-family: 'Sofia pro bold';font-style: normal;font-weight: bold;font-size: 22px;line-height: 38px;text-align: center;}
+input[type="radio"] {display: none;}
+.start {-webkit-text-stroke: 1px  #D56E67 ; color: transparent; }
+.classification {direction: rtl;unicode-bidi: bidi-override;}
+.start:hover,.start:hover ~ .start {color: #D56E67;}
+input[type="radio"]:checked ~ .start {color: #D56E67;}
+
+/*section 5*/
+.text-white{color: #fff;font-size: 18px !important; font-family: "Sofia pro"; text-align: center; }
+.title-white{color: #fff; margin-top: 50px; font-family: "Sofia pro bold"; text-align: center;}  
+.text-center{text-align: center;}
+.bg-5{width:100%;height:100%;display:flex;flex-direction:column;justify-content: center;align-items:center;background-image:url(img/Background/fondo2.png);background-repeat:no-repeat;background-size:100% 100%;} 
+.bg-5 form{width:100%;height:100%;background-color:#fff;display:flex;flex-direction:column;justify-content: center;align-items:center;border-radius:1em;padding:3em 0em;margin-top:1em;margin-bottom:13em; }
+.bg-5 form h3{width:100%;font-size: .75em;text-align:center !important;}
+.bg-5 form fieldset{width:100%;display:flex;flex-direction:column;justify-content: center;align-items:center;}
+.bg-5 form input{width:85%;padding:.75em;margin-bottom:1.5em;border:none;border-radius:0.5em;outline:none;box-shadow: 2px 10px 15px #eeeeee;}
+.bg-5 form button{width:55%;padding:1.3em;margin-bottom:1.5em;border:none;border-radius:0.5em;color:#D56E67;background-color:rgba(255, 255, 255, 0);box-shadow: 6px 10px 15px #eeeeee;}    
+.bg-5 form button:hover{color:#fff;background-color: #D56E67;}
+/*section 6*/
+.vl {width: 0px;border: 1px solid #0f3f56;height: 350px;}
+.text-bold{font-family: 'Sofia pro bold';}
+.text-white-6{color:#fff;}
+.text-white-6 img{ margin-right:20px ; width: 20px; }
+.icoYoutube img{width: 100%;max-width: 40px;height: auto;margin: 10px;}
+.icoLinkedin img{  width: 100%; max-width: 40px; height: auto; margin: 10px;}
+.form-control-sm {height: calc(1.5em + .5rem + 2px);padding: .25rem .5rem;font-size: .875rem;line-height: 1.5;border-radius: .2rem;background-color: rgba(218, 218, 218, 1);}
+textarea.form-control {height: auto;background-color: rgba(218, 218, 218, 1);}
+.button-info {width: 150px;height: 45px;font-size: 12px;letter-spacing: 2.5px;font-weight: 500; color: #ffffff;background-color: #13455E;border: none;border-radius: 10px;box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.5);transition: all 0.3s ease 0s; cursor: pointer;outline: none;font-family: "Sofia pro medium";letter-spacing: normal;}
+.button-info:hover {background-color: #13455E;box-shadow: 0px 15px 20px rgba(19, 69, 94, 0.6);color: #fff;transform: translateY(-7px);}
+}
